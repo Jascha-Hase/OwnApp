@@ -10,6 +10,7 @@ export class FirstPageViewComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-  }
+
+ }
 
 }

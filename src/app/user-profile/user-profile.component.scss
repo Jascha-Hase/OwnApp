@@ -1,0 +1,59 @@
+button{
+    background-color: #343A40;
+    color: #FFF;
+    margin-top: 20px;
+    width: 120px;
+    border-radius: 20px;
+}
+button:disabled{
+    background-color: rgb(146, 149, 153) !important;
+    color: #FFF !important;
+}
+
+.profile-card {
+    max-width: 400px;
+    margin-top: 75px;
+    min-height: 497px;
+    margin-left: 75px;
+  }
+  
+.header-image {
+    background-image: url('../../assets/img/default_avatar.png');
+    background-size: cover;
+  }
+  .mat-card:not([class*=mat-elevation-z]) {
+    box-shadow: 0 2px 1px -1px #343A40, 
+                0 1px 1px 0 #343A40, 
+                0 3px 15px 0 #343A40;
+}
+.card-sorting{
+    display: flex;
+}
+.content-card{
+    margin-top: 75px;
+    margin-left: 75px;
+    max-width: 970px;
+    min-height: 211px;
+}
+.profile-infos{
+    display: flex;
+    margin-left: 15px;
+}
+.first-profile-infos{
+    margin-top: -20px;
+}
+.second-profile-infos{
+    margin-top: -20px;
+    margin-left: 50px;
+}
+.font{
+    font-family: "BlinkMacSystemFont";
+}
+mat-icon{
+    border: 1px solid #343A40;
+    margin-left: 50px;
+    color: rgb(146, 149, 153);
+}
+mat-icon:hover{
+    cursor: pointer;
+}

@@ -1,1 +1,33 @@
-<p>login works!</p>
+<mat-card class="font">
+    <form #login="ngForm">
+            <img mat-card-image src="../../assets/img/login.jpg">
+            <h3 class="login-text">Login</h3>
+        <mat-card-content class="margin-under-head-text">
+            <div class="show-content-inLine">
+                <h4>Username:</h4>
+                <mat-form-field [hideRequiredMarker]="options.value.hideRequired"
+                    [floatLabel]="options.value.floatLabel" class="input-field">
+                    <input matInput type="text" [(ngModel)]="userName" name="userName" required>
+                    <mat-placeholder>Username</mat-placeholder>
+                </mat-form-field>
+                <div class="tooltip">
+                    <mat-icon>info</mat-icon>
+                    <span class="tooltiptext">Required</span>
+                </div>
+            </div>
+            <div class="show-content-inLine">
+                <h4>Password:</h4>
+                <mat-form-field [hideRequiredMarker]="options.value.hideRequired"
+                    [floatLabel]="options.value.floatLabel" class="input-field">
+                    <input matInput type="password" [(ngModel)]="userPassword" name="userPassword" required>
+                    <mat-placeholder>Password </mat-placeholder>
+                </mat-form-field>
+                <div class="tooltip">
+                    <mat-icon>info</mat-icon>
+                    <span class="tooltiptext">Required</span>
+                </div>
+            </div>
+            <button (click)="tryToLogin()" [disabled]="!login.form.valid" mat-raised-button>Login</button>
+        </mat-card-content>
+    </form>
+</mat-card>

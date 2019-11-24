@@ -15,6 +15,8 @@ import { AboutMeComponent } from './about-me/about-me.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
 import { CoursesComponent } from './courses/courses.component';
 import { FooterComponent } from './footer/footer.component';
+import { AuthService } from './component-services/auth.service';
+import { AuthGuardService } from './component-services/auth-guard.service';
 import { HeaderComponent } from './header/header.component';
 
 @NgModule({
@@ -40,7 +42,7 @@ import { HeaderComponent } from './header/header.component';
     ReactiveFormsModule,
     FormsModule
   ],
-  providers: [],
+  providers: [AuthService, AuthGuardService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
