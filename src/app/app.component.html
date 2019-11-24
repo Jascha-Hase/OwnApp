@@ -1,0 +1,35 @@
+<div>
+    <router-outlet>
+        <div class="topnav">
+            <div>
+                <ul>
+                    <li class="margin-left">
+                        <a [routerLink]="['/start']" routerLinkActive="active" class="nav">Start </a>
+                    </li>
+                    <li>
+                        <a [routerLink]="['/about']" routerLinkActive="active" class="nav">About </a>
+                    </li>
+                    <li>
+                        <a [routerLink]="['/service']" routerLinkActive="active" class="nav">Service </a>
+                    </li>
+                    <li>
+                        <a [routerLink]="['/courses']" routerLinkActive="active" class="nav">Courses </a>
+                    </li>
+                    <li>
+                        <a [routerLink]="['/contact']" routerLinkActive="active" class="nav">Contact </a>
+                    </li>
+                    <li>
+                        <a [routerLink]="['/profile']" routerLinkActive="active" class="nav">Profile </a>
+                    </li>
+                    <li>
+                        <div class="flex">
+                                <img class="avatar" src="../assets/img/default_avatar.png" alt="">
+                                <div class="top"><mat-icon>arrow_drop_down</mat-icon></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </router-outlet>
+    <app-footer></app-footer>
+</div>

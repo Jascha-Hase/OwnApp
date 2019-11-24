@@ -1,0 +1,70 @@
+<div class="card-sorting font">
+    <div>
+        <mat-card class="profile-card">
+            <mat-card-header>
+                <div mat-card-avatar class="header-image"></div>
+                <mat-card-title>Your Name</mat-card-title>
+                <mat-card-subtitle>Your Country</mat-card-subtitle>
+            </mat-card-header>
+            <img mat-card-image src="../../assets/img/default_avatar.png" alt="Photo of a Shiba Inu">
+            <mat-card-content>
+                <p>
+                    Other People can see your Profileinformation
+                </p>
+            </mat-card-content>
+        </mat-card>
+    </div>
+    <div>
+        <mat-card class="content-card">
+            <mat-card-header>
+                <mat-card-title>Your Profileinformations</mat-card-title>
+                <mat-card-subtitle>Last Change: 01.10.2019 <hr></mat-card-subtitle>
+            </mat-card-header>
+            <mat-card-content>
+                <div class="profile-infos">
+                    <div class="first-profile-infos">
+                        <h4>Informations</h4>
+                        <p>Name:</p>
+                        <p>Birthday: </p>
+                        <p>Interests:</p><!-- Maximale Länge festlegen -->
+                    </div>
+                    <div class="second-profile-infos">
+                        <h4>Contact</h4>
+                        <p>E-Mail: </p>
+                        <p>Number:</p>
+                        <p>Adress:</p>
+                    </div>
+                    <div>
+                        <mat-icon (click)="changeProfileInfos()">edit</mat-icon>
+                    </div>
+                </div>
+            </mat-card-content>
+        </mat-card>
+        <mat-card class="content-card">
+                <mat-card-header>
+                    <mat-card-title>Your Profileinformations</mat-card-title>
+                    <mat-card-subtitle>Last Change: 01.10.2019 <hr></mat-card-subtitle>
+                </mat-card-header>
+                <mat-card-content>
+                    <div class="profile-infos">
+                        <div class="first-profile-infos">
+                            <h4>Informations</h4>
+                            <p>Name: </p>
+                            <p>Birthday: </p>
+                            <p>Interests: </p><!-- Maximale Länge festlegen -->
+                        </div>
+                        <div class="second-profile-infos">
+                            <h4>Contact</h4>
+                            <p>E-Mail: </p>
+                            <p>Number:</p>
+                            <p>Adress:</p>
+                        </div>
+                        <div>
+                            <mat-icon (click)="changeProfileInfos()">edit</mat-icon>
+                        </div>
+                    </div>
+                </mat-card-content>
+            </mat-card>
+
+    </div>
+</div>

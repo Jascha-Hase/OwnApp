@@ -1,0 +1,45 @@
+.topnav {
+    overflow: hidden; 
+    background-color: #343A40;
+  }
+.nav{
+   color: rgba(255,255,255,.5);
+    }
+.topnav a {  
+    float: left;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: "BlinkMacSystemFont";
+  }
+.active {
+    color: #FFF;
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  .margin-left{
+    margin-left: 535px;
+  }
+  .avatar {
+    vertical-align: middle;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-top: 8px;
+  }
+  .flex{
+    display: flex;
+  }
+  .top{
+    margin-left: 20px;
+    margin-top: 15px;
+    color: #FFF;
+  }
+  .top:hover{
+    cursor: pointer;
+  }
